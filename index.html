@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li class="brand"><img src="logo.png" alt="Spotify" />Spotify</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <!-- <input type="text" placeholder="Search your song"> -->
+    </nav>
+
+    <div class="container">
+      <div class="Songlist">
+        <h4>The Best Songs---</h4>
+        <div class="SongItemscontainer">
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Wafa ne bewafai</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="0" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Haan Tu Hain</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="1" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Raaz Aankhein Teri</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="2" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Zaroorat</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="3" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Sapna Jahan</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="4" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+          <div class="songItems">
+            <img alt="1">
+            <span class="songName">Wajah Tum Ho</span>
+            <span class="songlistplay"><span class="timestamp">05:20 <i id="5" class="far songItemsPlay fa-play-circle"></i></span></span>
+          </div>
+        </div>
+      </div>
+      <div class="empty"></div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+      <div class="icons">
+        <i class="fas fa-3x fa-step-backward" id="previous"></i>
+        <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+        <i class="fas fa-3x fa-step-forward" id="next"></i>
+      </div>
+      <div class="songinfo">
+        <img src="mw.gif" width="42px" alt="1" id="gif" ><span id="masterSongName"> Wafa ne bewafai</span>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c850754a73.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

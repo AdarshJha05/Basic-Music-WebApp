@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+}
+.nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+.nav ul li a:hover{
+    cursor: pointer;
+    border:2px solid rgb(230, 223, 223);
+    border-radius: 5px;
+    padding: 2px;
+    background-color: white;
+    color: black;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: rgb(36, 28, 28);
+    color: white;
+}
+.nav ul li{
+    padding: 0 14px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.brand img{
+    width: 44px;
+    padding: 0 5px;
+}
+.container{
+    height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    display: flex;
+    margin: 10px auto;
+    max-width: 70%;
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url("bg.jpeg");
+    background-size: cover;
+}
+.bottom{
+    position: sticky;
+    height: 85px;
+    background-color: rgb(22, 27, 9);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 10px;  
+}
+.icons i{
+    cursor: pointer;
+}
+.SongItemscontainer{
+    margin-top: 40px;
+}
+.songItems{
+    height: 50px;
+    display: flex;
+    background-color: rgb(206, 170, 170);
+    margin: 12px 0;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    opacity: 0.8;
+}
+.songItems img{
+    width: 45px;    
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 18px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    font-family: 'Varela Round',sans-serif;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
